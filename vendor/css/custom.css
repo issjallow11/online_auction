@@ -1,0 +1,38 @@
+/* Error message styling */
+.help-inline{
+    color: red;
+}
+
+.message{
+    color: green;
+    text-align: center;
+}
+
+
+body {
+    padding-top: 56px;
+}
+
+.products{
+    padding-top: 50px;
+}
+
+.products .card{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.header-landing{
+    margin-top: 20px;
+}
+
+#countdown{
+    font-size: 24px;
+    color: blue;
+}
+
+.bid-card{
+    margin-top: 50px;
+}
+
+
