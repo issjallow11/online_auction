@@ -80,7 +80,7 @@ require "admin/function.php";
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                    <img src="uploads/<?php echo $item['image'] ?>" class="card-img" alt="<?php echo $item['product_name'] ?>">
+                                    <img src="/uploads/<?php echo $item['image'] ?>" class="card-img" alt="<?php echo $item['product_name'] ?>">
                                     </div>
                                     <div class="col-md-8">
                                     <div class="card-body">
@@ -92,9 +92,9 @@ require "admin/function.php";
                                              $result = $stmt->fetch();
                                              Database::disconnect();  
                                         ?> 
-                                        <p>Product Name: <?php echo $item['nom_product'];?></p> 
+                                        <p>Product Name: <?php echo $item['product_name'];?></p> 
                                         <p>Start Price: <?php echo $item['price_product'];?> <strong>GMD</strong></p>
-                                        <p>Current Price: <?php if($result['current_price'] != null)echo $result['current_price'];else echo $item['price_produit'];?> <strong>GMD</strong></p>
+                                        <p>Current Price: <?php if($result['current_price'] != null)echo $result['current_price'];else echo $item['price_product'];?> <strong>GMD</strong></p>
                                         <p>Description: <?php echo $item['description'];?></p>
                                         <p>Category: <?php echo $item['category'];?></p>
                                         <a href="index.php" class="btn btn-danger btn-block"><i class="fa fa-arrow-left"></i> Return</a>
@@ -172,7 +172,7 @@ require "admin/function.php";
                 $.ajax({
                     method:"POST",
                     url:"bidClose.php",
-                    data:{'id_produit':id_produit,'prix_bid':prix_bid,'id_login':id_login},
+                    data:{'id_product':id_produit,'price_bid':price_bid,'id_login':id_login},
                     success: function(data){
                             if(id_login != "null"){
                                 $('#countdown').append('<p style="color:green;">Please check your messages to see if you have won the Bid!</p>');

@@ -25,7 +25,7 @@
           <div class="card shadow mb-4 mt-5">
             <div class="card-header py-3 clear-fix">
               <h6 class="m-0 mt-2 font-weight-bold text-primary float-left">Accounts</h6>
-              <a href="insert.php" class="btn btn-primary float-right"><span class="fa fa-user-plus"></span> Add User</a>
+              <a href="addAccount.php" class="btn btn-primary float-right"><span class="fa fa-user-plus"></span> Add User</a>
             </div>
             <div class="card-body">
               <div class="table-responsive">
